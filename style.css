@@ -35,6 +35,22 @@ h1 {
   margin-top: 10px;
 }
 
+.buttons #pause-btn,
+.buttons #lap-btn,
+.buttons #timeRecord {
+  display: none;
+}
+
+.buttons.active #pause-btn,
+.buttons.active #lap-btn {
+  display: block;
+}
+
+.buttons.active #start-btn,
+.buttons.active #reset-btn {
+  display: none;
+}
+
 button {
   width: 300px;
   height: 100px;
@@ -47,15 +63,8 @@ button {
 
 button:hover {
   background-color: white;
-  color: #FEA602;
+  color: #fea602;
   cursor: pointer;
-}
-
-#pause-btn,
-#lap-btn,
-#reset-btn,
-#timeRecord {
-  display: none;
 }
 
 #timeRecord {
